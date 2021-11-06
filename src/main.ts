@@ -1,17 +1,17 @@
-import { areTherePairingCurlyBrackets } from "./functions";
+import { areTherePairingCurlyBrackets } from './functions';
 
-const readline = require("readline");
+const readline = require('readline');
 
 const rl = readline.createInterface({
   input: process.stdin,
-  output: process.stdout,
+  output: process.stdout
 });
 
-rl.question("input your text: ", (text) => {
+rl.question('input your text: ', text => {
   console.log(areTherePairingCurlyBrackets(text));
   rl.close();
 });
 
-rl.on("close", function () {
+rl.on('close', function () {
   process.exit(0);
 });
