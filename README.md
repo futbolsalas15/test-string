@@ -20,11 +20,9 @@ npm i
 npm run start
 ```
 
-## Contribute
+## Tests
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+```bash
+npm run test # to run tests in CI mode or
+npm run test:watch # to run tests in watch mode
+```

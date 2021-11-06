@@ -38,4 +38,8 @@ describe('are-there-matching-brackets.ts', () => {
   it('should return true if there are some open brackets and multiple close brackets, but all open brackets close', () => {
     expect(areThereMatchingBrackets('{{}}}}}}', BracketType.Curly)).toEqual(true);
   });
+
+  it('should return true if there is only one closed bracket', () => {
+    expect(areThereMatchingBrackets('}', BracketType.Curly)).toEqual(true);
+  });
 });

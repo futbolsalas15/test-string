@@ -6,9 +6,9 @@
   "scripts": {
     "start": "npm run build && node dist/main.js",
     "build": "tsc -p ./src/tsconfig.app.json",
-    "test": "jest --ci=true",
+    "test": "jest --ci=true --verbose",
     "lint": "eslint . --ext .ts",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll --verbose"
   },
   "devDependencies": {
     "@jest/types": "^27.2.5",
