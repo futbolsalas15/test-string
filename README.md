@@ -1,5 +1,7 @@
 # Matching Brackets Validation
 
+![example workflow](https://github.com/futbolsalas15/test-string/actions/workflows/node.js.yml/badge.svg)
+
 Validate if inside a string, there is a closed bracket for any open bracket.
 
 ## Installation
