@@ -12,7 +12,7 @@ npm i
 
 ## Usage
 
-> Only available via CLI
+> Only available via CLI, and only for curly brackets. If you want to test an additional bracket type, feel free to explore the functions available in `src/functions` folder
 
 ```bash
 npm run start
