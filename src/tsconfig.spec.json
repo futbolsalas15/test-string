@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../dist/spec",
+    "target": "es5",
+    "types": ["jest", "node"]
+  },
+  "include": ["**/*.spec.ts", "**/*.d.ts"]
+}
+// 'none', 'commonjs', 'amd', 'system', 'umd', 'es6', 'es2015', 'es2020', 'esnext'.
