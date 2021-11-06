@@ -4,7 +4,8 @@
   "version": "0.0.1-snapshot",
   "main": "main.js",
   "scripts": {
-    "start": "tsc -p ./src/tsconfig.app.json && node dist/main.js",
+    "start": "npm run build && node dist/main.js",
+    "build": "tsc -p ./src/tsconfig.app.json",
     "test": "jest --ci=true",
     "test:watch": "jest --watchAll"
   },
