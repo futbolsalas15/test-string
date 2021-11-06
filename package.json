@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "tsc -p ./src/tsconfig.app.json && node dist/main.js",
-    "test": "jest"
+    "test": "jest --ci=true",
+    "test:watch": "jest --watchAll"
   },
   "devDependencies": {
     "@jest/types": "^27.2.5",
