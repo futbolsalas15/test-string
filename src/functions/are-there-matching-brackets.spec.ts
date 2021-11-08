@@ -31,15 +31,15 @@ describe('are-there-matching-brackets.ts', () => {
     expect(areThereMatchingBrackets('{abc...xyz}', BracketType.Curly)).toEqual(true);
   });
 
-  it('should return true if there is a matching open/close bracket, even if there are more than 1 closed brackets', () => {
-    expect(areThereMatchingBrackets('}{}}', BracketType.Curly)).toEqual(true);
+  it('should return false if there is a matching open/close bracket, even if there are more than 1 closed brackets', () => {
+    expect(areThereMatchingBrackets('}{}}', BracketType.Curly)).toEqual(false);
   });
 
-  it('should return true if there are some open brackets and multiple close brackets, but all open brackets close', () => {
-    expect(areThereMatchingBrackets('{{}}}}}}', BracketType.Curly)).toEqual(true);
+  it('should return false if there are some open brackets and multiple close brackets, but all open brackets close', () => {
+    expect(areThereMatchingBrackets('{{}}}}}}', BracketType.Curly)).toEqual(false);
   });
 
   it('should return true if there is only one closed bracket', () => {
-    expect(areThereMatchingBrackets('}', BracketType.Curly)).toEqual(true);
+    expect(areThereMatchingBrackets('}', BracketType.Curly)).toEqual(false);
   });
 });

@@ -14,9 +14,9 @@ export function areThereMatchingBrackets(text: string, bracketType: BracketEntry
     }
   }
 
-  if (textRemaining.includes(bracketType.open)) {
-    return false;
+  if (!textRemaining.includes(bracketType.open) && !textRemaining.includes(bracketType.close)) {
+    return true;
   }
 
-  return true;
+  return false;
 }
